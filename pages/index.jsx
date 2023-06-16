@@ -148,10 +148,10 @@ function Card({ title = "Link", platformLink = "https://img.icons8.com/external-
           <div class="bg-green-400 dark:bg-dark-green-400 text-green-600 dark:text-dark-green-400 inline-block rounded-md bg-opacity-[.15] px-2.5 py-1 text-xs font-medium capitalize dark:bg-opacity-[.15] comfort">Easy</div>
         }
         {diff == "Medium" &&
-          <div class="bg-pink-400 dark:bg-dark-pink-400 text-pink-500 dark:text-dark-pink-400 inline-block rounded-md bg-opacity-[.15] px-2.5 py-1 text-xs font-medium capitalize dark:bg-opacity-[.15] comfort">Hard</div>
+          <div class="bg-yellow-600 dark:bg-dark-yellow-500 text-yellow-700 dark:text-dark-yellow-700 inline-block rounded-md bg-opacity-[.15] px-2.5 py-1 text-xs font-medium capitalize dark:bg-opacity-[.15] comfort">Medium</div>
         }
         {diff == "Hard" &&
-          <div class="bg-yellow-600 dark:bg-dark-yellow-500 text-yellow-700 dark:text-dark-yellow-700 inline-block rounded-md bg-opacity-[.15] px-2.5 py-1 text-xs font-medium capitalize dark:bg-opacity-[.15] comfort">Medium</div>
+          <div class="bg-pink-400 dark:bg-dark-pink-400 text-pink-500 dark:text-dark-pink-400 inline-block rounded-md bg-opacity-[.15] px-2.5 py-1 text-xs font-medium capitalize dark:bg-opacity-[.15] comfort">Hard</div>
         }
         {/* Solution Link */}
         <div className="inline-block justify-start items-center gap-1 pt-2 mx-1">

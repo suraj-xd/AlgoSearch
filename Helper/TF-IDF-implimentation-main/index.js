@@ -242,9 +242,12 @@ async function performSearch(q_terms) {
                                     ...result.slice(0, 10).map(JSON.stringify),
                                     ...result_by_title.slice(0, 10).map(JSON.stringify)
                                 ]);
+                                console.log(result);
+                                console.log(result_by_title);
                                 // Convert the JSON strings back to objects
                                 var mergedResultsArray = Array.from(mergedResults, JSON.parse);
                                 // Resolve the promise with the mergedResultsArray
+                                console.log(mergedResultsArray);
                                 resolve(mergedResultsArray);
                             })
                         });
