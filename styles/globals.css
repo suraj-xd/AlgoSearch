@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700;900&&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@import url('./navbar.css');
+@import url('./fonts.css');
+@import url('./scrollbar.css');
+@import url('./slider.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+:root {
+  --primary-color: #1a1a1c;
+  --back-shadow: #3a3e6f;
+  --front-edge: #24263e;
+  --color-primary: #5F4DFF;
+  --yellow: #ffd45c;
+  --page-color: rgb(249 250 251);
+}
+
+[data-theme="dark"] {
+  --primary-color: rgb(249 250 251);
+  --back-shadow: #3a3e6f;
+  --front-edge: #24263e;
+  --color-primary: #5F4DFF;
+  --yellow: #ffd45c;
+  --page-color: #1a1a1c;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color: var(--page-color);
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-x: hidden;
+  cursor: default;
+  color: var(--primary-color) !important;
+}
+
+li {
+  list-style: none;
+}
+
+/* Grid List */
+
+.grid-list {
+  display: grid;
+  list-style-type: none;
+  grid-auto-columns: -webkit-max-content;
+  grid-auto-columns: max-content;
+  grid-template-columns: repeat(1,minmax(0,1fr));
+  gap: 1rem;
+}
+@media (min-width: 768px){
+.grid-list {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+}
+}
+
+@media (min-width: 1024px){
+.grid-list {
+    grid-template-columns: repeat(4,minmax(0,1fr));
+}}
+
+@media (min-width: 1280px){
+.grid-list {
+    grid-template-columns: repeat(4,minmax(0,1fr));
+}}
+
+/* Loader */
+
+.loadersvg {
+  width: 3.25em;
+  transform-origin: center;
+  animation: rotate4 2s linear infinite;
+}
+
+circle {
+  fill: none;
+  stroke: hsl(214, 97%, 59%);
+  stroke-width: 2;
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: dash4 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate4 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash4 {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 90, 200;
+    stroke-dashoffset: -35px;
+  }
+
+  100% {
+    stroke-dashoffset: -125px;
+  }
+}
+
+.gradient-text {
+  background-image: linear-gradient(to top,var(--tw-gradient-stops));
+  --tw-gradient-from: #164bf9;
+  --tw-gradient-to: rgba(22, 249, 192, 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #eab308;
+  background-clip: text;
+  color: #0000;
+  -webkit-background-clip: text;
+}
