@@ -41,7 +41,7 @@ function NewComp() {
     setData([]);
     let myQuery = query.split(" ");
     console.log(myQuery);
-    await axios.get('https://algosearchbeta.netlify.app/api/hello', {
+    await axios.get('http://localhost:3000/api/hello', {
       headers: {
         'Content-Type': 'application/json'
       },
