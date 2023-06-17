@@ -41,7 +41,7 @@ function NewComp() {
     setData([]);
     let myQuery = query.split(" ");
     console.log(myQuery);
-    await axios.get('https://algosearchbeta.netlify.app/api/hello', {
+    await axios.get('https://algosearch-backend.onrender.com/search', {
       headers: {
         'Content-Type': 'application/json'
       },
@@ -50,7 +50,6 @@ function NewComp() {
       }
     })
       .then(response => {
-        console.log(response.data);
         setData(response.data);
       })
       .catch(error => {

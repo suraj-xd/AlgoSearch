@@ -6,8 +6,8 @@ export default async function handler(req, res) {
     console.log(typeof(strings));
     try {
       const myQuery = JSON.parse(strings);
-      // const searchResults = await performSearch(myQuery);
-      res.status(200).json(myQuery);
+      const searchResults = await performSearch(myQuery);
+      res.status(200).json(searchResults);
     } catch (error) {
       // Handle any errors that occur during the search
       console.error(error);
