@@ -1,38 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AlgoZenith WebDev Hackathon: AlgoSearch
+
+Check out the live version of AlgoSearch at [https://algosearchbeta.netlify.app/](https://algosearchbeta.netlify.app/). 🔎
+
+Welcome to AlgoSearch, a project developed for the AlgoZenith WebDev Hackathon! 🚀
+
+## About AlgoSearch
+
+AlgoSearch is a dynamic search engine designed to streamline your journey through the world of algorithmic problems. Powered by Selenium, Express, TF-IDF, and Next.js, this tool enhances your problem-solving experience.
+
+## Features
+
+- **Efficient Problem Search:** AlgoSearch helps you quickly find algorithmic problems from various sources.
+- **User-Friendly Interface:** The sleek interface ensures a smooth and intuitive user experience.
+- **TF-IDF Algorithm:** Leveraging TF-IDF for accurate and relevant search results.
+- **Real-time Results:** Experience real-time updates as you search for your next challenge.
+- **Seamless Navigation:** Built with Next.js for seamless and fast navigation.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository: `git clone https://github.com/surajxd/AlgoSearch.git`
+2. Install dependencies: `npm install`
+3. Run the app: `npm run dev`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Project Structure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `src/`: Contains the frontend code built with Next.js.
+- `server/`: Houses the Express backend that powers the search engine.
+- `scripts/`: Includes scripts for data retrieval using Selenium.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Live Demo
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Check out the live version of AlgoSearch at [https://algosearchbeta.netlify.app/](https://algosearchbeta.netlify.app/).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Contributions
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Contributions are welcome! Whether you're a developer, designer, or algorithm enthusiast, feel free to contribute to AlgoSearch.
 
-## Learn More
+## Feedback
 
-To learn more about Next.js, take a look at the following resources:
+Got feedback or suggestions? We'd love to hear from you. Open an issue or reach out to us.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Acknowledgments
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+AlgoSearch was developed for the AlgoZenith WebDev Hackathon. Special thanks to the organizers and fellow participants for the inspiration and support.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Let's solve algorithms with ease using AlgoSearch! Happy hacking! 🌟
